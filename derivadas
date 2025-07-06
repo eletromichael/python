@@ -1,0 +1,15 @@
+import sympy as sym #importando biblioteca
+
+x, y, z = sym.symbols('x y z') #declaracao de variaveis
+
+expressao1 = 4*x**2*2*x #primeira funcao
+resultado1 = sym.diff(expressao1, x) #resultado da derivada da primeira funcao
+print("A Derivada 1 resulta em:", resultado1)
+
+expressao2 = (5*x**3) / (2*x**7) #segunda funcao
+resultado2 = sym.diff(expressao2, x) #resultado da derivada da segunda funcao
+print("A derivada 2 resulta em:", resultado2)
+
+expressao3 = sym.sqrt(8*x-1) #terceira funcao
+resultado3 = sym.diff(expressao3, x) #resultado da derivada da terceira funcao
+print("A derivada 3 resulta em:", resultado3)
