@@ -1,0 +1,20 @@
+#importacao da biblioteca sympu
+import sympy as sym
+
+#declaracao de variaveis
+x, y, z = sym.symbols('x y z')
+
+#integral indefinida
+integral1 = sym.integrate(sym.cos(x), x)
+print('A Integral de cos (x) vale: ', 
+      integral1)
+
+#integral definida
+integral2 = sym.integrate(sym.cos(x), (x, -1, 1))
+print('A Integral de cos (x) entre -1 e 1 vale: ', 
+      integral2)
+
+#integral definida
+integral3 = sym.integrate(sym.exp(-x), (x, 0, sym.oo))
+print('A Integral de exp(-x) entre 0 e mais infinito vale: ', 
+      integral3)
