@@ -1,0 +1,17 @@
+#pacote utilizado e apelido dentro do codigo
+import sympy as sym
+
+#variaveis
+x, y, z = sym.symbols('x y z')
+
+#calculando o limite de f(x) = x e x tendendo ao infinito
+limit1 = sym.limit(x, x, sym.oo)
+print(f"O valor do limite 1  converte-se {limit1}")
+
+#calculando o limite de f(x) = 1/x e x tendendo ao infinito
+limit2 = sym.limit(1/x, x, sym.oo)
+print(f"O valor do limite 2 converte-se {limit2}")
+
+#calculando o limite de f(x) = sin(3x)/(3x) e x tendendo a zero
+limit3 = sym.limit(sym.sin(3*x)/(3*x), x, 0)
+print(f"O valor do limite 3 converte-se {limit3}")
